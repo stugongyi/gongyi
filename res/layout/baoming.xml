@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/backgroundtwo">
+
+    <TextView
+        android:id="@+id/nametips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/nametip" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nametips"
+        android:layout_alignBottom="@+id/nametips"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/nametips"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/emailtips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="42dp"
+        android:layout_toLeftOf="@+id/name"
+        android:text="@string/emailtip" />
+
+    <TextView
+        android:id="@+id/phonetips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailtips"
+        android:layout_alignLeft="@+id/emailtips"
+        android:layout_marginBottom="80dp"
+        android:text="@string/phonetip" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignTop="@+id/emailtips"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <ImageButton
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/OK"
+        android:layout_alignBottom="@+id/OK"
+        android:layout_alignRight="@+id/email"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttoncancel"
+        android:text="@string/cleartip" />
+
+    <ImageButton
+        android:id="@+id/OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/email"
+        android:layout_below="@+id/emailtips"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/makesure"
+        android:text="@string/OKtip" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignRight="@+id/email"
+        android:layout_alignTop="@+id/phonetips"
+        android:ems="10"
+        android:inputType="phone" />
+
+</RelativeLayout>

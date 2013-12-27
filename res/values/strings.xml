@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Gongyi</string>
+    <string name="nametip">姓名：</string>
+    <string name="phonetip">手机号：</string>
+    <string name="emailtip">邮箱：</string>
+    <string name="OKtip">确定</string>
+    <string name="cleartip">清除</string>
+    <string name="baoming">报名</string>
+    
+</resources>
